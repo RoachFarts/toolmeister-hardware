@@ -10,7 +10,9 @@ import Link from 'next/link'
 import FormattedPrice from './FormattedPrice'
 import Button from './Button'
 
-const CartContainer = ({session}:any) => {
+import { Session } from 'next-auth';
+
+const CartContainer = ({session}: { session: Session }) => {
   const {cart} = useSelector((state:StoreState)=>state?.toolmeister)
   const [totalAmt, setTotalAmt] = useState(0)
   const dispatch = useDispatch()

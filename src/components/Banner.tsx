@@ -3,7 +3,6 @@ import React from 'react'
 import Container from './Container';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
-import Link from 'next/link';
 import Button from './Button';
 import { BannerData } from '../../type';
 import FormattedPrice from './FormattedPrice';

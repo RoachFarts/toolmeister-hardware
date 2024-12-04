@@ -3,7 +3,6 @@ import React from 'react'
 import { MdSwitchAccount } from 'react-icons/md'
 import SidebarCart from './SidebarCart'
 import { auth } from '@/auth'
-import { log } from 'console'
 import Image from 'next/image'
 
 

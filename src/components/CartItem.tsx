@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
-import { addToCart, decreaseQuantity, increaseQuantity, removeFromCart } from '@/redux/toolmeisterSlice';
+import { decreaseQuantity, increaseQuantity, removeFromCart } from '@/redux/toolmeisterSlice';
 import toast from 'react-hot-toast';
 import FormattedPrice from './FormattedPrice';
 import { FaMinus, FaPlus } from 'react-icons/fa';

@@ -1,5 +1,4 @@
 import { ProductData } from "@/type"
-import { url } from "inspector"
 import { NextRequest, NextResponse } from "next/server"
 import Stripe from 'stripe'
 

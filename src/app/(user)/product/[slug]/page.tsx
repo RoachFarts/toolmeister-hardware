@@ -3,16 +3,11 @@ import React from 'react'
 import { ProductData } from '../../../../../type';
 import { client } from '@/sanity/lib/client';
 import { groq } from 'next-sanity';
-import { get } from 'http';
-import { getBestSellerData } from '@/lib/getData';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
-import Product from '@/sanity/schemas/product';
-import ProductCard from '@/components/ProductCard';
 import FormattedPrice from '@/components/FormattedPrice';
 import { MdStar } from 'react-icons/md';
 import AddToCartButton from '@/components/AddToCartButton';
-import category from '@/sanity/schemas/category';
 import ProductList from '@/components/ProductList';
 
 
