@@ -6,7 +6,7 @@ interface LoaderProps {
   title?: string
 }
 
-const Loader: React.FC<LoaderProps> = ({ size = 'medium', color = '#2563eb', title }) => {
+const Loader: React.FC<LoaderProps> = ({ size = 'medium', color = '#2563eb' }) => {
   const sizeClasses = {
     small: 'w-4 h-4',
     medium: 'w-8 h-8',
