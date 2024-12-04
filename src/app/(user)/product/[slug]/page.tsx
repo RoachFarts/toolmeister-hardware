@@ -1,3 +1,4 @@
+
 import Container from '@/components/Container'
 import React from 'react'
 import { ProductData } from '../../../../../type';
@@ -11,14 +12,9 @@ import AddToCartButton from '@/components/AddToCartButton';
 import ProductList from '@/components/ProductList';
 
 
-interface Props {
-    params:{
-        slug:string;
-    }
-}
 
-const SingleProductPage = async ({params}: Props) => {
-    const {slug} = await Promise.resolve(params);
+const SingleProductPage = async ({params}:{params: Promise<{slug:string}>}) => {
+    const slug = (await params).slug;
 const query = groq`*[_type == "product" && slug.current == $slug][0]{
     ...}`;
 
